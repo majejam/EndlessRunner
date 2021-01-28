@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 1153292535191646243}
   - component: {fileID: 1153292535191646240}
   - component: {fileID: 1153292535191646246}
+  - component: {fileID: 2047515633535034752}
   - component: {fileID: 1153292535191646241}
   m_Layer: 0
   m_Name: GroundSpawner
@@ -248,7 +249,7 @@ MonoBehaviour:
   TriggerLeave:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1153292535191646241}
+      - m_Target: {fileID: 2047515633535034752}
         m_MethodName: Spawn
         m_Mode: 1
         m_Arguments:
@@ -259,6 +260,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2047515633535034752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153292535191646242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65ce0f08395f0314bb7dd89758a4fcba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPrefab: []
+  LastObject: {fileID: 7194269789103430881}
 --- !u!114 &1153292535191646241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,6 +603,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e658b6544800c824ba1e90ff12c2a079, type: 3}
+--- !u!1 &7194269789103430881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8346998816095226622, guid: e658b6544800c824ba1e90ff12c2a079,
+    type: 3}
+  m_PrefabInstance: {fileID: 1153292535828043295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7194269789103430880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8346998816095226623, guid: e658b6544800c824ba1e90ff12c2a079,
