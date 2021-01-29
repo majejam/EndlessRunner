@@ -7,7 +7,7 @@ public class LevelController : MonoBehaviour
     public Vector3 Direction;
     public float Speed = 50;
 
-    public Vector3 Axe = new Vector3(0, 0, 1);
+    public Vector3 Axe = new Vector3(0, 0, -1);
     
 
     private Rigidbody rb;
