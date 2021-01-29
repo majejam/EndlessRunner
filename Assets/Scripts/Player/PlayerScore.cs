@@ -13,7 +13,7 @@ public class PlayerScore : MonoBehaviour
 
     void Start() 
     {
-        TxtScore.text = "Score = " + Score;
+        //TxtScore.text = "Score = " + Score;
     }
 
     void Update() 
@@ -24,17 +24,17 @@ public class PlayerScore : MonoBehaviour
     public void AddScore()
     {
         Score++;
-        TxtScore.text = "Score = " + Score;
+        //TxtScore.text = "Score = " + Score;
     }
 
     public void ReduceScore()
     {
         Score--;
-        TxtScore.text = "Score = " + Score;
+        //TxtScore.text = "Score = " + Score;
 
         if(Score < 0)
         {
-            PnlGameOver.SetActive(true);
+            //PnlGameOver.SetActive(true);
         }
     }
 
