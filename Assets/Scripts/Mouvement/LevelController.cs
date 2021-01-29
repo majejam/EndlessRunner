@@ -23,7 +23,7 @@ public class LevelController : MonoBehaviour
         float horAxis = Input.GetAxis("Horizontal");
         //transform.Translate(Direction * Speed * Time.deltaTime * horAxis);
         //position d'arrivée = Pos actuelle + deplacement 
-        transform.Rotate(Axe, Time.deltaTime * horAxis * Speed);
+        transform.Rotate(Axe, -Time.deltaTime * horAxis * Speed);
         
         
     }

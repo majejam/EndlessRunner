@@ -32,7 +32,7 @@ public class PlayerScore : MonoBehaviour
         Score--;
         TxtScore.text =  Score + " hearts";
 
-        if(Score < 0)
+        if(Score < 1)
         {
             PnlGameOver.SetActive(true);
             Time.timeScale = 0f;
