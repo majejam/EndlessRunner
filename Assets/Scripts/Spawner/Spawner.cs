@@ -38,11 +38,11 @@ public class Spawner : MonoBehaviour
 
         if (randomNb > 8)
         {
-            copy = Instantiate(ObjectPrefab[0], transform);
+            copy = Instantiate(ObjectPrefab[0] );
         }
         else 
         {
-            copy = Instantiate(ObjectPrefab[1], transform);
+            copy = Instantiate(ObjectPrefab[1]);
         }
         
         float angle = (Random.Range(0f, 1f)) * Mathf.PI * 2f;
@@ -51,5 +51,6 @@ public class Spawner : MonoBehaviour
         
         
         copy.transform.position = new Vector3(Mathf.Sin(angle)* Radius, Mathf.Cos(angle)* Radius + (Radius), 0);
+        copy.transform.parent = transform;
     }
 }
