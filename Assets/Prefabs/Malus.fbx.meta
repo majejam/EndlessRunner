@@ -1,9 +1,58 @@
 fileFormatVersion: 2
-guid: d374aff2b1fb9294c99a76d1b167a68c
+guid: b50c284282e950b43878f416827d67bb
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable: []
-  externalObjects: {}
+  internalIDToNameTable:
+  - first:
+      74: 1132547922023742953
+    second: CharacterArmature|Defeat
+  - first:
+      74: 9061338213343248790
+    second: CharacterArmature|Idle
+  - first:
+      74: 7022811679865794533
+    second: CharacterArmature|PickUp
+  - first:
+      74: -4592842328519117816
+    second: CharacterArmature|Punch
+  - first:
+      74: -4856542728082765067
+    second: CharacterArmature|RecieveHit
+  - first:
+      74: -5307234019925579384
+    second: CharacterArmature|Shoot_OneHanded
+  - first:
+      74: 228616033308382003
+    second: CharacterArmature|SitDown
+  - first:
+      74: -2488620027461464802
+    second: CharacterArmature|StandUp
+  - first:
+      74: 5008348457023331957
+    second: CharacterArmature|Victory
+  - first:
+      74: -5599002979973759676
+    second: CharacterArmature|Walk
+  - first:
+      74: -2469224417514991532
+    second: CharacterArmature|Walk_Carry
+  - first:
+      74: -203655887218126122
+    second: mixamo.com
+  - first:
+      74: -3780516532778130023
+    second: mixamo.com (1)
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Face
+    second: {fileID: 2100000, guid: 7b6e18d3d6943cc4f9f030b9205c0f63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 7b6e18d3d6943cc4f9f030b9205c0f63, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -30,7 +79,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 66
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
