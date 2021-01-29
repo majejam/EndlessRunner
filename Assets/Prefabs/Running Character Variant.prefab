@@ -29,21 +29,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.60484594, y: 1.6976957, z: 0.95678204}
   m_Center: {x: -0.012348613, y: 0.85513896, z: -0.02160899}
---- !u!114 &2792085867211942174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4440346663425210853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c61f069cd40d0c645981cce6158c9d56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Score: 0
-  TxtScore: {fileID: 0}
-  PnlGameOver: {fileID: 0}
 --- !u!114 &989139015211257171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,7 +76,7 @@ MonoBehaviour:
   CollisionLeave:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &9120320442555131143
+--- !u!114 &2792085867211942174
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,32 +85,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4440346663425210853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e4f78c6f77e815439a43b6f1f4a97c5, type: 3}
+  m_Script: {fileID: 11500000, guid: c61f069cd40d0c645981cce6158c9d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RespondTo:
-    serializedVersion: 2
-    m_Bits: 256
-  CollisionEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2792085867211942174}
-        m_MethodName: AddScore
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  CollisionStay:
-    m_PersistentCalls:
-      m_Calls: []
-  CollisionLeave:
-    m_PersistentCalls:
-      m_Calls: []
+  Score: 0
+  TxtScore: {fileID: 0}
+  PnlGameOver: {fileID: 0}
 --- !u!114 &5295389303478894283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +111,41 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2792085867211942174}
         m_MethodName: ReduceScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  CollisionStay:
+    m_PersistentCalls:
+      m_Calls: []
+  CollisionLeave:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9120320442555131143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4440346663425210853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4f78c6f77e815439a43b6f1f4a97c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RespondTo:
+    serializedVersion: 2
+    m_Bits: 256
+  CollisionEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2792085867211942174}
+        m_MethodName: AddScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

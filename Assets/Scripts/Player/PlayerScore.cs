@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PlayerScore : MonoBehaviour
 {
-    public int Score = 0;
+    public int Score = 1;
 
     public Text TxtScore; // Text => le composant UI attaché à l'objet 
     public GameObject PnlGameOver; 
@@ -13,7 +13,7 @@ public class PlayerScore : MonoBehaviour
 
     void Start() 
     {
-        //TxtScore.text = "Score = " + Score;
+        TxtScore.text =  Score + " hearts";
     }
 
     void Update() 
@@ -24,17 +24,18 @@ public class PlayerScore : MonoBehaviour
     public void AddScore()
     {
         Score++;
-        //TxtScore.text = "Score = " + Score;
+        TxtScore.text =  Score + " hearts";
     }
 
     public void ReduceScore()
     {
         Score--;
-        //TxtScore.text = "Score = " + Score;
+        TxtScore.text =  Score + " hearts";
 
         if(Score < 0)
         {
-            //PnlGameOver.SetActive(true);
+            PnlGameOver.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
