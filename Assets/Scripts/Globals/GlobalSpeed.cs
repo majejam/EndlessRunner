@@ -5,6 +5,7 @@ using UnityEngine;
 public class GlobalSpeed : MonoBehaviour
 {
     public float Speed = 5;
+    private float Timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,11 @@ public class GlobalSpeed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Timer += Time.deltaTime;
+        if (Timer >= 1f)
+        {
+            Speed++;
+            Timer = 0;
+        }
     }
 }
