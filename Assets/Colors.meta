@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Colors.meta
 guid: 31a87d7d0691d7146a4d0079564804ec
+=======
+guid: fbf6e298c8aa2974da3e531881d5a74d
+>>>>>>> a89992744859809a505d54bf129b4870689ec245:Assets/Models/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

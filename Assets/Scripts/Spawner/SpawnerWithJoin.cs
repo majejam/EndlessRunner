@@ -10,7 +10,7 @@ public class SpawnerWithJoin : MonoBehaviour
     public void Spawn()
     {
         int index = Random.Range(0, ObjectPrefab.Length);
-        GameObject copy = Instantiate(ObjectPrefab[index]);
+        GameObject copy = Instantiate(ObjectPrefab[index], transform);
 
         Vector3 pos = LastObject.transform.position;
 
